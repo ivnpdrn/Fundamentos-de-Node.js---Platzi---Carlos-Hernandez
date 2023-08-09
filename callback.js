@@ -1,14 +1,14 @@
-function soyAsincrona(miCallback)  {
+function hola(nombre, miCallback)  {
     
     setTimeout(function()  {
-        console.log('Estoy siendo asincrona');
+        console.log('Hola, '+ nombre);
         miCallback();
     }, 1000);
 }
 
     console.log('Iniciando proceso...');
 
-    soyAsincrona(function() {
+    hola('Carlos', function() {
         console.log('Terminando proceso...');
     });
 
