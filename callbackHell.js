@@ -12,7 +12,8 @@ function adios(nombre, otroCallback) {setTimeout(function() {console.log('Adios 
 
 // --
 
-
     console.log('Iniciando proceso...');
-    hola('Carlos', function(nombre) { hablar(function() { hablar(function() { hablar(function() { adios(nombre, function() { console.log('Terminando proceso...');});});});});});
-    
+
+    hola('Carlos', function(nombre) {adios(nombre,function() { console.log('Terminamos');});});
+
+    // hola('Carlos', function(nombre) { hablar(function() { hablar(function() { hablar(function() { adios(nombre, function() { console.log('Terminando proceso...');});});});});});
