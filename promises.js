@@ -7,7 +7,10 @@ function hola(nombre)  {
 
 
 
-function hablar(nombre) { return new Promise (( resolve, reject) => { setTimeout(function() {console.log('Bla bla bla bla...'); resolve(nombre);}, 1000); }); }
+function hablar(nombre) { return new Promise (( resolve, reject) => { setTimeout(function() {console.log('Bla bla bla bla...'); 
+// resolve(nombre);
+reject('Hay un error');
+}, 1000); }); }
 
 
 
