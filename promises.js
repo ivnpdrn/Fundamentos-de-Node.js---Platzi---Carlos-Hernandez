@@ -35,3 +35,5 @@ hola('Carlos')
         console.error(error);
 
     }) // catch: asegurandose que todo lo que pasa aqui no falla, y en caso de que falle console.error('Ha habido un error:')
+
+    // siempre que se use .then entonces usa .catch
