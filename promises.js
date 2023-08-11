@@ -7,7 +7,7 @@ function hola(nombre)  {
 
 
 
-function hablar(callbackHablar) {setTimeout(function() {console.log('Bla bla bla bla...'); callbackHablar()});}
+function hablar(nombre) { return new Promise (( resolve, reject) => { setTimeout(function() {console.log('Bla bla bla bla...'); resolve(nombre);}, 1000); }); }
 
 
 
@@ -21,5 +21,8 @@ function adios (nombre) { return new Promise ((resolve, reject) => {setTimeout(f
 
 console.log('Iniciando el proceso..');
 hola('Carlos')
+    .then(hablar)
+    .then(hablar)
+    .then(hablar)
     .then(adios)
     .then((nombre) => {console.log('Terminado el proceso');})
