@@ -29,3 +29,9 @@ hola('Carlos')
     .then(hablar)
     .then(adios)
     .then((nombre) => {console.log('Terminado el proceso');})
+
+    .catch(error => {
+        console.error('Ha habido un error:');
+        console.error(error);
+
+    }) // catch: asegurandose que todo lo que pasa aqui no falla, y en caso de que falle console.error('Ha habido un error:')
