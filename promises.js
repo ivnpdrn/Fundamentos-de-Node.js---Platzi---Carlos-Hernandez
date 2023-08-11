@@ -21,6 +21,5 @@ function adios (nombre) { return new Promise ((resolve, reject) => {setTimeout(f
 
 console.log('Iniciando el proceso..');
 hola('Carlos')
-    .then(nombre => {return adios(nombre);})
-
+    .then(adios)
     .then((nombre) => {console.log('Terminado el proceso');})
