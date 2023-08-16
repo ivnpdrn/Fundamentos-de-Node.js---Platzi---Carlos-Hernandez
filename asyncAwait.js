@@ -22,6 +22,8 @@ async function main()  {
     await adios(nombre);
 }
 
-main();
 
+console.log('Empezamos el proceso');
+main();
+console.log('Termina el proceso');
 
