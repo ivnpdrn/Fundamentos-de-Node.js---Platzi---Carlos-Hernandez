@@ -1,4 +1,3 @@
 
-setImmediate(function()  {
-    console.log('Hola');
-});
+console.log(process);
+
