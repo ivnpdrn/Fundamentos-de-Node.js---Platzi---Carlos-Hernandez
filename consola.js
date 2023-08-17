@@ -1,1 +1,1 @@
-console.error('Error')
+console.error('Warn')
