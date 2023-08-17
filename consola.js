@@ -9,4 +9,4 @@ var tabla = [
     }
 ]
 
-    console.log(tabla)
+    console.table(tabla)
