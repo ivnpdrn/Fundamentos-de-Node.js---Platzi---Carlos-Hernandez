@@ -1,1 +1,1 @@
-console.log('Algo')
+console.error('Error')
