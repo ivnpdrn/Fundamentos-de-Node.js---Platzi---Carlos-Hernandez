@@ -2,7 +2,7 @@ const fs = require('fs');
 
 function leer (ruta, cb) {
     fs.readFile(ruta, (err, data) =>  {             
-        console.log(data);
+        console.log(data.toString());
 })
 }
 
