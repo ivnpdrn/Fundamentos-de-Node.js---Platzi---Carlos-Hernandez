@@ -1,12 +1,10 @@
-var tabla = [
-    {
-        a: 1,
-        b: 'Z'
-    },
-    {
-        a: 2,
-        b: 'Otra'
-    }
-]
+console.log('Conversacion:');
+console.group('conver');
+console.log('Hola');
+console.log('Blablabla');
+console.log('Adios');
+console.groupEnd('conver');
 
-    console.table(tabla)
+console.log('otra cosas de otra funcion')
+
+
