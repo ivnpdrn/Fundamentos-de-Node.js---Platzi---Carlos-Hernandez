@@ -16,7 +16,11 @@ function escribir(ruta, contenido, cb)  {
     });
 }
 
+function borrar (ruta, cb) { 
+    fs.unlink(ruta, cb);
+} // cb: el call back es para saber si se borro bien, o se borro al
+
 //leer('archivo.txt',console.log)
 
-escribir('archivo1.txt', 'Soy un archivo nuevo', console.log);
-
+// escribir('archivo1.txt', 'Soy un archivo nuevo', console.log);
+borrar('archivo1.txt',console.log);
