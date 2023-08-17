@@ -4,6 +4,7 @@ function function1()  {
     console.log('Esto tambien');
     console.log('Esto tambien');
     function2();
+    console.log('Hemos vuelto a la 1');
     console.groupEnd('function 1');
 
 
