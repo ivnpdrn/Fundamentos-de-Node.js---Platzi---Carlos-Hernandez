@@ -23,4 +23,7 @@ function borrar (ruta, cb) {
 //leer('archivo.txt',console.log)
 
 // escribir('archivo1.txt', 'Soy un archivo nuevo', console.log);
+
 borrar('archivo1.txt',console.log);
+
+// en caso de que el archivo.txt or archivo.txt esta ubicado en un directorio diferente a file_system_fs.js: (__dirname + '/archivo1.txt, console.log)
