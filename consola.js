@@ -6,7 +6,6 @@ console.group('bla');
 console.log('Blablabla');
 console.log('Blablabla');
 console.log('Blablabla');
-console.log('Adios');
 console.groupEnd('bla');
 console.log('Adios');
 console.groupEnd('Conversacion');
