@@ -1,14 +1,26 @@
+function function1()  {
+    console.group('function 1');
+    console.log('Esto es de la funcion1');
+    console.log('Esto tambien');
+    console.log('Esto tambien');
+    function2();
+    console.groupEnd('function 1');
 
 
-console.group('Conversacion:');
-console.log('Hola');
-console.group('bla');
-console.log('Blablabla');
-console.log('Blablabla');
-console.log('Blablabla');
-console.groupEnd('bla');
-console.log('Adios');
-console.groupEnd('Conversacion');
-console.log('otra cosas de otra funcion')
+}
+
+function function2()  {
+    console.group('function 2');
+    console.log('ahora estamos en la funcion 2');
+    console.groupEnd('function 2');
+
+
+
+}
+
+
+console.log('empezamos');
+function1();
+
 
 
