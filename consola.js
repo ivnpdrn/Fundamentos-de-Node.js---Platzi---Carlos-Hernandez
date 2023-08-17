@@ -1,7 +1,7 @@
 
 
 console.group('Conversacion:');
-console.group('Hola');
+console.log('Hola');
 console.group('bla');
 console.log('Blablabla');
 console.log('Blablabla');
