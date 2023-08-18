@@ -9,6 +9,7 @@ try {
 catch(err) {
    console.error('Vaya, algo se ha roto...');
    console.error(err.message);  // cuentame lo que ha pasado, ahora mejor resumido
+   console.log('Pero no pasa nada, lo hemos capturado');
  }
 
 console.log('esto de aqui esta al final');
