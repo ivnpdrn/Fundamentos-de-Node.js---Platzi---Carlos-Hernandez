@@ -10,4 +10,6 @@ catch(err) {
     console.error('Vaya, algo se ha roto...');
 }
 
+console.log('esto de aqui esta al final');
+
 
