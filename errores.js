@@ -10,18 +10,21 @@ function serompe()  {
     return 3 + z;
 }
 
-function seRompeAsincrona() {
-    setTimeout(function()   {    // seRompeAsincrona esta funcion llama a un Timeout que va a ejecutar una funcion asincrona: 
-                                 // (function () {return 3 + z;}) y esta funcion asincrona, ya no esta dentro dentro del hilo pricipal
-                                 // donde estamos ejecutando, esta en otro hilo,entonces no se detecta esa ruptura. Entonces matamos el proceso.  
-        return 3 + z;
+function seRompeAsincrona(cb) {
+    setTimeout(function()   {    
+        try {
+            return 3 + z;
+        } catch (err){
+            console.error('Error en mi funcion asincrona');
+            cb(err);
+        }
 
     })
 }
 
 try {
     //otraFunction();
-    seRompeAsincrona();
+    seRompeAsincrona(function() { console.log('hay error')});
 }
 
 catch(err) {
