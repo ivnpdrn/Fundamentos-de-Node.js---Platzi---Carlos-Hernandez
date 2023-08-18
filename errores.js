@@ -8,7 +8,7 @@ try {
 
 catch(err) {
    console.error('Vaya, algo se ha roto...');
-   console.error(err);  // cuentame lo que ha pasado
+   console.error(err.message);  // cuentame lo que ha pasado, ahora mejor resumido
  }
 
 console.log('esto de aqui esta al final');
