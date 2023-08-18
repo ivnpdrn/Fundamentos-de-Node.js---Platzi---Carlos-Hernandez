@@ -1,9 +1,17 @@
+
+function otraFunction() {
+    return serompe();
+}
+
+
+
+
 function serompe()  {
     return 3 + z;
 }
 
 try {
-    serompe();
+    otraFunction();
 }
 
 catch(err) {
