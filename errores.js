@@ -2,5 +2,12 @@ function serompe()  {
     return 3 + z;
 }
 
-serompe();
+try {
+    serompe();
+}
+
+catch(err) {
+    console.error('Vaya, algo se ha roto...');
+}
+
 
