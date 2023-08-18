@@ -24,7 +24,7 @@ function seRompeAsincrona(cb) {
 
 try {
     //otraFunction();
-    seRompeAsincrona(function() { console.log('hay error')});
+    seRompeAsincrona(function(err) { console.log(err.message)});
 }
 
 catch(err) {
