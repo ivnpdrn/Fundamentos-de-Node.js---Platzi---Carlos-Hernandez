@@ -1,7 +1,7 @@
 
 const { exec } = require('child_process');
 
-exec('dir', (err, stdout, sterr) => {
+exec('node consola', (err, stdout, sterr) => {
     if (err)  {
         console.error(err);
         return false;
