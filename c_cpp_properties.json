@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Windows",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/path/to/node/include" // Replace with the actual path to the 'include' folder of your Node.js installation
+            ],
+            // ... other settings ...
+        }
+    ],
+  "version":4
+}
+
