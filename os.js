@@ -18,5 +18,6 @@ const os = require('os');
 // console.log(kb(os.freemem()));
 // console.log(mb(os.freemem()));
 // console.log(gb(os.freemem()));
+// console.log(gb(os.totalmem())); // free memory in gb
 
-console.log(gb(os.totalmem())); // free memory in gb
+console.log(os.homedir());
